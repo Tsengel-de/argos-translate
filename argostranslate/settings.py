@@ -131,7 +131,7 @@ dev_mode = get_setting("ARGOS_DEV_MODE") in TRUE_VALUES
 
 package_index = get_setting(
     "ARGOS_PACKAGE_INDEX",
-    default="https://raw.githubusercontent.com/argosopentech/argospm-index/main/",
+    default="https://raw.githubusercontent.com/Tsengel-de/argospm-index/main/",
 )
 
 package_data_dir = Path(
@@ -146,7 +146,7 @@ os.makedirs(downloads_dir, exist_ok=True)
 if not dev_mode:
     remote_repo = os.getenv(
         "ARGOS_PACKAGE_INDEX",
-        default="https://raw.githubusercontent.com/argosopentech/argospm-index/main",
+        default="https://raw.githubusercontent.com/Tsengel-de/argospm-index/main",
     )
 else:
     remote_repo = os.getenv(

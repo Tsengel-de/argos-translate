@@ -8,8 +8,8 @@ with open("README.md") as f:
 
 setup(
     name="argostranslate",
-    version="1.11.1",
-    description="Open-source neural machine translation library based on OpenNMT's CTranslate2",
+    version="1.12.0",
+    description="Open-source neural machine translation library based on OpenNMT's CTranslate2 (Mongolian-enabled)",
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="Argos Open Technologies, LLC",

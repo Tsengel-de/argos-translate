@@ -7,13 +7,27 @@ Argos Translate uses [OpenNMT](https://opennmt.net/) for translations and can be
 
 Argos Translate also manages automatically pivoting through intermediate languages to translate between languages that don't have a direct translation between them installed. For example, if you have a es → en and en → fr translation installed you are able to translate from es → fr as if you had that translation installed. This allows for translating between a wide variety of languages at the cost of some loss of translation quality.
 
-The [argospm-index](https://github.com/argosopentech/argospm-index) repo contains metadata and download links to access pre-trained Argos Translate models.
+The [argospm-index](https://github.com/Tsengel-de/argospm-index) repo contains metadata and download links to access pre-trained Argos Translate models.
+
+### 🇲🇳 Sovereign Mongolian Language Support
+This release natively incorporates out-of-the-box support for **Mongolian (Cyrillic)** (`mn`) translation models:
+- **`translate-en_mn`** (English ➔ Mongolian)
+- **`translate-mn_en`** (Mongolian ➔ English)
+
+Hosted on Hugging Face: [`Tsengel-mn/argos-mongolian`](https://huggingface.co/Tsengel-mn/argos-mongolian) via [`Tsengel-de/argospm-index`](https://github.com/Tsengel-de/argospm-index).
+
+Install Mongolian packages instantly via CLI:
+```bash
+argospm update
+argospm install translate-en_mn
+argospm install translate-mn_en
+```
 
 ### Supported languages
 
-[Browse Package Index](https://www.argosopentech.com/argospm/index/)
+##### [Browse Package Index](https://raw.githubusercontent.com/Tsengel-de/argospm-index/main/index.json)
 
-Arabic, Azerbaijani, Basque, Catalan, Chinese, Czech, Danish, Dutch, English, Esperanto, Finnish, French, Galician, German, Greek, Hebrew, Hindi, Hungarian, Indonesian, Irish, Italian, Japanese, Kyrgyz, Korean, Malay, Persian, Polish, Portuguese, Portuguese (Brazil), Russian, Slovak, Spanish, Swahili, Swedish, Turkish, Ukrainian, Urdu, and more
+Arabic, Azerbaijani, Basque, Catalan, Chinese, Czech, Danish, Dutch, English, Esperanto, Finnish, French, Galician, German, Greek, Hebrew, Hindi, Hungarian, Indonesian, Irish, Italian, Japanese, Kyrgyz, Korean, Malay, **Mongolian (🇲🇳)**, Persian, Polish, Portuguese, Portuguese (Brazil), Russian, Slovak, Spanish, Swahili, Swedish, Turkish, Ukrainian, Urdu, and more
 
 [Request a language](https://github.com/argosopentech/argos-translate/discussions/91)
 
